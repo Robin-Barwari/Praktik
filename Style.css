@@ -9,6 +9,13 @@
     justify-content: center;
 }
 
+.pic-text {
+  font-family: 'Poppins', sans-sherif, cursive;
+  font-weight: 200;
+  text-align: left;
+
+}
+
 
 /*----------------------------------------------------*/
 .container {

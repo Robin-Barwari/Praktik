@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hailey</title>
+    
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/c22cefdc11.js" crossorigin="anonymous"></script>
+    </head>
+<body>
+    <div>
+        <div class="container">
+            <nav>
+                <a href="index.html"><img src="Images/dc9f490c-5a46-491d-98d9-99a5f88baded-removebg-preview.png" class="logo"></a>                <ul id="sidemenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="booking.html">Inquiries</a></li>
+
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
+    </div>
+    <div class="contact">
+        <div class="contactform">
+            <form>
+                <p class="formtext"></p>
+                <input type="text" name="Name" placeholder="Your Name*" required>
+                <input type="email" name="email" placeholder="Your Email*" required>
+                <input type="organisation" name="organizationnumber" placeholder="Organization number">
+                <textarea name="Message" rows="6" placeholder="Your Message*" required></textarea>
+                <button type="submit" class="btn btn2">Send</button>
+            </form>
+        </div>
+        <div class="contactinfobox">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas culpa quo odio, incidunt itaque vitae totam quos velit nesciunt perspiciatis tenetur qui consectetur quas ducimus blanditiis, aliquid suscipit? Facere, earum.
+        </div>
+    </div>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        
+        function openmenu(){
+          sidemenu.style.right = "0";
+        }
+        
+        function closemenu(){
+          sidemenu.style.right = "-200px";
+        }
+        
+        $(window).on("load", function(){
+            $("load-wrapper").fadeOut
+        });
+        </script>
+</body>
+</html>

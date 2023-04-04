@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hailey</title>
+    
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/c22cefdc11.js" crossorigin="anonymous"></script>
+    </head>
+<body>
+    <div id="header-about">
+        <video autoplay muted loop class="test-video"> 
+            <source src="Images/IMG_8496.mov">
+        </video>
+        <div class="container">
+            <nav>
+                <a href="index.html"><img src="Images/dc9f490c-5a46-491d-98d9-99a5f88baded-removebg-preview.png" class="logo"></a>
+                <ul id="sidemenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="booking.html">Inquiries</a></li>
+
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+                <div class="header-text">
+                    <h1>
+                        Everything You Need To Know About <span>Me</span>
+                    </h1>
+                </div>
+        </div>
+    </div>
+
+     <!-- ---------ABOUT---------- -->
+    <div id="about">
+        <div class="about-container">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/B:W.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="about-title">About Me</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        In ut laoreet nisi. In felis purus, condimentum non egestas vitae, 
+                        pharetra vel dui. Nunc at porttitor odio. 
+                        Quisque posuere diam at molestie vehicula. 
+                        Cras eu lectus lacinia, vulputate velit quis, 
+                        sollicitudin nulla. 
+                        
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('talent1')">Acting</p>
+                        <p class="tab-links" onclick="opentab('talent2')">Modeling</p>
+                        <p class="tab-links" onclick="opentab('talent3')">Voice Acting</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="talent1">
+                        <ul>
+                            <li><span>something1</span><br>Lorem ipsum dolor sit amet</li>
+                            <li><span>something1</span><br>Lorem ipsum dolor sit amet</li>
+                            <li><span>something1</span><br>Lorem ipsum dolor sit amet</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="talent2">
+                        <ul>
+                            <li><span>something2</span><br>Lorem ipsum dolor sit amet</li>
+                            <li><span>something2</span><br>Lorem ipsum dolor sit amet</li>
+                            <li><span>something2</span><br>Lorem ipsum dolor sit amet</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="talent3">
+                        <ul>
+                            <li><span>something3</span><br>Lorem ipsum dolor sit amet</li>
+                            <li><span>something3</span><br>Lorem ipsum dolor sit amet</li>
+                            <li><span>something3</span><br>Lorem ipsum dolor sit amet</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> mail@dianasvensson.com</p>
+                    
+                    <div class="social-icons">
+                        <a class="facebook" href="https://m.facebook.com/OfficialHaileyAlice?_rdr"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a class="instagram" href="https://www.instagram.com/haileyalice.model/"><i class="fa-brands fa-instagram"></i></a>
+                        <a class="tiktok" href="https://www.tiktok.com/@mini.and.mom"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-solid fa-copyright"></i> Hailey</p>
+        </div>
+    </div> 
+    
+    <!-- ------------MENU-SCRIPT--------- -->
+    <script>
+    var sidemenu = document.getElementById("sidemenu");
+    
+    function openmenu(){
+      sidemenu.style.right = "0";
+    }
+    
+    function closemenu(){
+      sidemenu.style.right = "-200px";
+    }
+    
+    $(window).on("load", function(){
+        $("load-wrapper").fadeOut
+    });
+    </script>
+</body>
+</html>

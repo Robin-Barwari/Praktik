@@ -24,6 +24,19 @@ body {
   height: 100vh;
 }
 
+.about-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  filter: brightness(80%);
+}
+
 .test-video {
   width: 100%;
   height: 100%;
@@ -41,10 +54,15 @@ body {
   padding: 10px 10%;
 }
 
+.container-footer {
+  background-color: #030303;
+  padding: 40px;
+}
+
 .about-container {
   background-color: #ffffff;
   border-radius: 5px;
-  padding-bottom: 40px;
+  padding: 40px;
 }
 
 .header-text h1 span{
@@ -69,7 +87,7 @@ nav ul li{
 }
 
 nav ul li a {
-  color: #737373;
+  color: #ffffff;
   text-decoration: none;
   font-size: 18px;
   position: relative;
@@ -79,7 +97,7 @@ nav ul li a::after {
   content: '';
   width: 0;
   height: 3px;
-  background: #737373;
+  background: #EABEDB;
   position: absolute;
   left: 0;
   bottom: -6px;
@@ -100,7 +118,7 @@ nav ul li a:hover::after {
 
 .header-text h1 {
   font-size: 60px;
-  margin-top: 20px;
+  margin-top: 10px;
   font-weight: 200;
 }
 
@@ -112,9 +130,9 @@ nav ul li a:hover::after {
 
 .header-text h4 {
   font-size: 17px;
-  margin-top: 20px;
   font-weight: 200;
   color: #ffffff;
+  padding-bottom: 20px;
 }
 
 .header-text h4 span{
@@ -198,7 +216,6 @@ padding: 30px;
 /*---------ABOUT----------*/
 
 #about {
-  padding: 80px 0 10px;
   color: #737373;
 }
 
@@ -213,7 +230,7 @@ padding: 30px;
 
 .about-col-1 img {
   width: 100%;
-  padding-top: 60px;
+  padding-top: 25%;
   border-radius: 15px;
 }
 
@@ -221,61 +238,13 @@ padding: 30px;
   flex-basis: 60%;
 }
 
+.about-col-2 h1 span {
+  color: #EABEDB;
+}
+
 .about-title {
   font-size: 60px;
   font-weight: 300;
-}
-
-.tab-titles {
-  display: flex;
-  margin: 20px 0  40px;
-}
-
-.tab-links {
-  margin-right: 50px;
-  font-size: 18px;
-  font-weight: 300;
-  cursor: pointer;
-  position: relative;
-  font-size: 22px;
-  font-weight: 300;
-}
-
-.tab-links::after {
-  content: '';
-  width: 0;
-  height: 3px;
-  background: #EABEDB;
-  position: absolute;
-  left: 0;
-  bottom: -8px;
-  transition: 0.2s;
-  border-radius: 15px;
-}
-
-.tab-links.active-link::after {
-  width: 50%;
-}
-
-.tab-contents ul li{
-  list-style: none;
-  margin: 10px 0;
-  font-size: 14px;
-  font-weight: 200;
-}
-
-.tab-contents ul li span {
-  color: #EABEDB;
-  font-size: 20px;
-  font-weight: 300;
-}
-
-.tab-contents {
-  display: none;
-}
-
-.tab-contents.active-tab {
-  display: block;
 }
 
 /* ---------PORTFOLIO--------- */
@@ -374,20 +343,36 @@ padding: 30px;
 /* -------------CONTACT/FOOTER-------------- */
 .contact
 {
-  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.contactform {
-  display: flex;
-  justify-content: center;
-  margin-right: 40%;
-  padding-top: 2%;
+.formtext
+{
+  min-width: 30%;
+  margin-left: 7.5%;
+  margin-top: 4%;
+
+}
+
+.contactinfotext
+{
+  padding: 5%;
+  font-size: 1.5vw;
+  color: white
 }
 
 .contactinfobox
 {
-  background-color: black;
-  padding: 1rem;
+  margin: 5%;
+  margin-bottom: 12%;
+  margin-left: 15%;
+  background-color: pink;
+  opacity: 80%;
+  border-radius: 2%;
+  border-color: grey;
+  border-width: thick;
 }
 
 .contact-left {
@@ -449,8 +434,10 @@ padding: 30px;
 
 .btn.btn2 {
   display: inline-block;
-  background:#EABEDB;
+  background-color: pink;
+  opacity: 80%;
   color: #ffffff;
+  
 }
 
 .contact form {
@@ -497,6 +484,30 @@ nav .fa-solid{
   .header-text {
     margin-top: 95%;
     font-size: 16px;
+  }
+
+  .contact
+  {
+    flex-direction: column-reverse;
+    padding: 50px;
+  }
+
+  .formtext
+  {
+    min-width: 100%;
+    margin-left: 0;
+  }
+
+  .contactinfobox
+  {
+    margin-left: 0;
+    margin: 0;
+  }
+
+  .contactinfotext
+  {
+    font-size: 14px;
+    color: white;
   }
 
   .logo {
@@ -564,6 +575,10 @@ nav .fa-solid{
   .about-col-1 {
     margin-bottom: 30px;
   }
+  
+  .about-col-1 img{
+    padding-top: 0%;
+  }
 
   .about-col-2 {
     font-size: 14px;
@@ -582,4 +597,7 @@ nav .fa-solid{
   .copyright {
     font-size: 14px;
   }
+
+  
 }
+

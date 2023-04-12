@@ -54,10 +54,6 @@ body {
   padding: 10px 10%;
 }
 
-.container-footer {
-  background-color: #030303;
-  padding: 40px;
-}
 
 .about-container {
   background-color: #ffffff;
@@ -114,12 +110,14 @@ nav ul li a:hover::after {
   font-size: 30px;
   flex-basis: 60%;
   font-weight: 200;
+  color: #ffffff;
 }
 
 .header-text h1 {
   font-size: 60px;
   margin-top: 10px;
   font-weight: 200;
+  padding-bottom: 20px;
 }
 
 .header-text h2 {
@@ -132,15 +130,19 @@ nav ul li a:hover::after {
   font-size: 17px;
   font-weight: 200;
   color: #ffffff;
-  padding-bottom: 20px;
+  padding-bottom: 5px;
 }
 
 .header-text h4 span{
   
   font-weight: 500;
-  color: #737373;
+  color: #EABEDB;
   padding-left: 10px;
   padding-right: 30px;
+}
+
+.info-text {
+  column-count: 2;
 }
 
 .photo-container {
@@ -212,6 +214,30 @@ padding: 30px;
 	}
 }
 
+/* ----------Review-------- */
+.review-container .box .review-col {
+  display: flex;
+  flex-direction: column;
+  width: 32.5%;
+}
+
+.review-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 30px;
+  }
+  
+  .review-container .box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 
 /*---------ABOUT----------*/
 
@@ -341,13 +367,6 @@ padding: 30px;
 }
 
 /* -------------CONTACT/FOOTER-------------- */
-.contact
-{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
 .formtext
 {
   min-width: 30%;
@@ -355,12 +374,22 @@ padding: 30px;
   margin-top: 4%;
 
 }
+.footer-content{
+  background-color: #ffffff;
+  color: #030303;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content img {
+  width: 30%;
+}
 
 .contactinfotext
 {
   padding: 5%;
   font-size: 1.5vw;
-  color: white
+  color: #030303;
 }
 
 .contactinfobox
@@ -376,7 +405,7 @@ padding: 30px;
 }
 
 .contact-left {
-  color: #ffffff;
+  color: #030303;
 }
 
 .contact-left p {
@@ -420,12 +449,12 @@ padding: 30px;
 }
 
 .social-icons a:hover {
-  color: #ffffff;
+  color: #030303;
   transform: translateY(-5px);
 }
 
 .instagram :hover {
-  background: radial-gradient(circle at 30% 107%, #ffffff 0%, #ffffff 5%, #ffffff 45%, #ffffff 60%, #ffffff 90%);
+  background: radial-gradient(circle at 30% 107%, #030303 0%, #030303 5%, #030303 45%, #030303 60%, #030303 90%);
   -webkit-background-clip: text;
           /* Also define standard property for compatibility */
           background-clip: text;
@@ -469,10 +498,18 @@ form btn2 {
   padding: 25px;
   background: #d9d9d9;
   font-weight: 200;
+  font-size: 10px;
 }
 
 .copyright i{
   color: #737373;
+}
+
+.thankyoupic
+{
+  width: 50%;
+  display: flex;
+  align-items: center;
 }
 
 /* ----------RESPONSIVE------------ */
@@ -496,18 +533,6 @@ nav .fa-solid{
   {
     min-width: 100%;
     margin-left: 0;
-  }
-
-  .contactinfobox
-  {
-    margin-left: 0;
-    margin: 0;
-  }
-
-  .contactinfotext
-  {
-    font-size: 14px;
-    color: white;
   }
 
   .logo {
@@ -598,6 +623,16 @@ nav .fa-solid{
     font-size: 14px;
   }
 
-  
+  .review-container .box .review-col {
+    width: 100%;
+  }
+
+  .review-container .box {
+    flex-direction: column;
+  }
+
+  .review-col {
+    padding-bottom: 40px;
+  }
 }
 

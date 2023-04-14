@@ -89,6 +89,13 @@ nav ul li a {
   position: relative;
 }
 
+.booking-nav ul li a {
+  color: #737373;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+
 nav ul li a::after {
   content: '';
   width: 0;
@@ -407,7 +414,7 @@ nav ul li a:hover::after {
 
 /* -------------CONTACT/FOOTER-------------- */
 .formtext {
-  min-width: 30%;
+  min-width: 35%;
   margin-left: 7.5%;
   margin-top: 4%;
 }
@@ -421,7 +428,7 @@ nav ul li a:hover::after {
 }
 
 .footer-content img {
-  width: 30%;
+  width: 25%;
 }
 
 .contact{
@@ -429,22 +436,19 @@ nav ul li a:hover::after {
 }
 
 .contactinfotext {
-  padding: 5%;
-  font-size: 1vw;
+  padding: 20px;
+  font-size: 21px;
   color: #030303;
+  text-align: center;
 }
 
 .contactinfobox {
-  margin: 5%;
-  margin-bottom: 12%;
-  margin-left: 10%;
+  margin: 5% 7.5% 10% 7.5%;
+  
   background-color: pink;
   opacity: 80%;
   border-radius: 2%;
-  border-color: grey;
-  border-width: thick;
-  padding-bottom: 5%
-  
+  font-weight: 300;
 }
 
 .social-icons {
@@ -541,6 +545,13 @@ form btn2 {
   font-family: Sue Ellen Francisco;
 }
 
+.footer-title-booking {
+  font-weight: 300;
+  font-size: 50px;
+  padding-bottom: 20px;
+  font-family: Sue Ellen Francisco;
+}
+
 .mail-to {
   color: #EABEDB;
 }
@@ -621,10 +632,23 @@ nav .fa-solid {
     padding: 50px;
   }
 
-  .contactinfobox{
-    
+  .contactinfobox {
+    margin: 0;
+    margin-bottom: 5%;
+    margin-left: 0;
+    background-color: pink;
+    opacity: 80%;
+    border-radius: 2%;
+    border-color: grey;
+    border-width: thick;
+    padding-bottom: 5%
   }
 
+  .contactinfotext {
+    padding: 5%;
+    font-size: 15px;
+    color: #030303;
+  }
 
   .formtext {
     min-width: 100%;
@@ -759,5 +783,9 @@ nav .fa-solid {
 
   .footer-title {
     font-size: 30px;
+  }
+
+  .line-breaker img {
+    width: 65%;
   }
 }

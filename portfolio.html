@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Hailey</title>
-    
-        <link rel="stylesheet" href="style.css">    
-    
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;700&display=swap" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/c22cefdc11.js" crossorigin="anonymous"></script>
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hailey</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;700&family=Sue+Ellen+Francisco&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c22cefdc11.js" crossorigin="anonymous"></script>
+</head>
 <body>
     <div id="header-home">
         <video autoplay muted loop class="test-video"> 
@@ -32,42 +33,68 @@
             </nav>
         </div>
     </div>
-    <div id="contact">
-        <div class="container-footer">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fa-solid fa-paper-plane"></i> mail@dianasvensson.com</p>
-                    
-                    <div class="social-icons">
-                        <a class="facebook" href="https://m.facebook.com/OfficialHaileyAlice?_rdr"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a class="instagram" href="https://instagram.com/haileys_modeling?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram"></i></a>
-                        <a class="tiktok" href="https://www.tiktok.com/@mini.and.mom"><i class="fa-brands fa-tiktok"></i></a>
-                    </div>
+
+    <div class="portfolio">
+        <div class="photo-container">
+            <div class="box">
+                <div class="photo-col-port">
+                    <button <figure><img src="Images/IMG_0112.JPG" class="port-pic-1"></figure></button>
                 </div>
-                
+                <div class="photo-col-port">
+                    <button <figure><img src="Images/IMG_0112.JPG" class="port-pic-2"></figure></button>
+                </div>
             </div>
         </div>
-        <div class="copyright">
-            <p>Copyright <i class="fa-solid fa-copyright"></i> Hailey</p>
+
+    </div>
+
+        <!-- -----------------CONTACT/FOOTER------------------ -->
+        <div id="contact">
+            <div class="footer-content">
+                <h1 class="footer-title">Want to reach out?</h1>
+                <img src="Images/WhatsApp Image 2023-03-29 at 11.08.41.jpeg">
+                <p class="mail-to"><i class="fa-solid fa-paper-plane"></i> <a href="mailto: collab@hailey-alice.com">collab@hailey-alice.com</a></p>
+                <div class="social-icons">
+                    <a class="facebook" href="https://m.facebook.com/OfficialHaileyAlice?_rdr"><i
+                        class="fa-brands fa-facebook-f"></i></a>
+                        <a class="instagram" href="https://www.instagram.com/haileyalice.model/"><i
+                            class="fa-brands fa-instagram"></i></a>
+                            <a class="tiktok" href="https://www.tiktok.com/@mini.and.mom"><i class="fa-brands fa-tiktok"></i></a>
+                        </div>
+                    </div>
+            <div class="copyright">
+                <p>Copyright <i class="fa-solid fa-copyright"></i> Hailey Alice 2023</p>
+            </div>
         </div>
-    </div> 
-    
+
     <!-- ------------MENU-SCRIPT--------- -->
     <script>
-    var sidemenu = document.getElementById("sidemenu");
-    
-    function openmenu(){
-      sidemenu.style.right = "0";
-    }
-    
-    function closemenu(){
-      sidemenu.style.right = "-200px";
-    }
-    
-    $(window).on("load", function(){
-        $("load-wrapper").fadeOut
-    });
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+
+        $(window).on("load", function () {
+            $("load-wrapper").fadeOut
+        });
+
+        function flash(e){
+        $('.flash')
+        .show()  //show the hidden div
+        .animate({opacity: 0.5}, 300) 
+        .fadeOut(300)
+        .css({'opacity': 1});
+}
+
+$(document).ready(function() {    
+  $('.flash').hide();  
+  $(document).mouseup(function(e) { flash(e); });
+});
     </script>
 </body>
 </html>

@@ -1,0 +1,36 @@
+[
+    {
+      "name" : "Modeling",
+      "images" : [
+        {
+            "src": "./Images/IMG_927.JPG",
+            "alt": "1"
+          },
+          {
+            "src": "./Images/IMG_8266.JPG",
+            "alt": "2"
+          },
+          {
+            "src": "./Images/IMG_0112.JPG",
+            "alt": "3"
+          }
+      ]
+    },
+    {
+      "name" : "Acting",
+      "images" : [
+          {
+            "src": "./Images/IMG_6997.jpg",
+            "alt": "a"
+          },
+          {
+            "src": "./Images/netflix.JPG",
+            "alt": "a"
+          },
+          {
+            "src": "./Images/B:W.jpg",
+            "alt": "a"
+          }
+      ]
+    }
+]

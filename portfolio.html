@@ -34,38 +34,39 @@
         </div>
     </div>
 
-    <div class="portfolio">
-        <div class="photo-container">
-            <div class="box">
-                <div class="photo-col-port">
-                    <button <figure><img src="Images/IMG_0112.JPG" class="port-pic-1"></figure></button>
-                </div>
-                <div class="photo-col-port">
-                    <button <figure><img src="Images/IMG_0112.JPG" class="port-pic-2"></figure></button>
-                </div>
+    <div class="portfolio-background">
+        <div class="portfolio">
+            <div class="portfolio-container-img">
+                <button class="image-item" data-modal="true" data-gallery="Modeling" aria-label="Open Modeling image gallery">
+                    <img src="Images/IMG_0112.JPG" alt="Modeling">
+                </button>
+                <button class="image-item" data-modal="true" data-gallery="Acting" aria-label="Open Acting image gallery">
+                    <img src="Images/IMG_0112.JPG" alt="Acting">
+                </button>
             </div>
         </div>
-
     </div>
 
-        <!-- -----------------CONTACT/FOOTER------------------ -->
-        <div id="contact">
-            <div class="footer-content">
-                <h1 class="footer-title">Want to reach out?</h1>
-                <img src="Images/WhatsApp Image 2023-03-29 at 11.08.41.jpeg">
-                <p class="mail-to"><i class="fa-solid fa-paper-plane"></i> <a href="mailto: collab@hailey-alice.com">collab@hailey-alice.com</a></p>
-                <div class="social-icons">
-                    <a class="facebook" href="https://m.facebook.com/OfficialHaileyAlice?_rdr"><i
-                        class="fa-brands fa-facebook-f"></i></a>
-                        <a class="instagram" href="https://www.instagram.com/haileyalice.model/"><i
-                            class="fa-brands fa-instagram"></i></a>
-                            <a class="tiktok" href="https://www.tiktok.com/@mini.and.mom"><i class="fa-brands fa-tiktok"></i></a>
-                        </div>
+    <div id="instafeed-container"></div>
+
+    <!-- -----------------CONTACT/FOOTER------------------ -->
+    <div id="contact">
+        <div class="footer-content">
+            <h1 class="footer-title">Want to reach out?</h1>
+            <img src="Images/WhatsApp Image 2023-03-29 at 11.08.41.jpeg">
+            <p class="mail-to"><i class="fa-solid fa-paper-plane"></i> <a href="mailto: collab@hailey-alice.com">collab@hailey-alice.com</a></p>
+            <div class="social-icons">
+                <a class="facebook" href="https://m.facebook.com/OfficialHaileyAlice?_rdr"><i
+                    class="fa-brands fa-facebook-f"></i></a>
+                    <a class="instagram" href="https://www.instagram.com/haileyalice.model/"><i
+                        class="fa-brands fa-instagram"></i></a>
+                        <a class="tiktok" href="https://www.tiktok.com/@mini.and.mom"><i class="fa-brands fa-tiktok"></i></a>
                     </div>
-            <div class="copyright">
-                <p>Copyright <i class="fa-solid fa-copyright"></i> Hailey Alice 2023</p>
-            </div>
+                </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-solid fa-copyright"></i> Hailey Alice 2023</p>
         </div>
+    </div>
 
     <!-- ------------MENU-SCRIPT--------- -->
     <script>
@@ -78,23 +79,22 @@
         function closemenu() {
             sidemenu.style.right = "-200px";
         }
-
-        $(window).on("load", function () {
-            $("load-wrapper").fadeOut
-        });
-
-        function flash(e){
-        $('.flash')
-        .show()  //show the hidden div
-        .animate({opacity: 0.5}, 300) 
-        .fadeOut(300)
-        .css({'opacity': 1});
-}
-
-$(document).ready(function() {    
-  $('.flash').hide();  
-  $(document).mouseup(function(e) { flash(e); });
-});
     </script>
+    <script type="module">
+        import initGallery from "./galleryApp.js";
+        initGallery('./galleries.json', {
+          speed: 600,
+        })
+      </script>
+      <script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
+      <script type="text/javascript">
+      var userFeed = new Instafeed({
+          get: 'user',
+          target: "instafeed-container",
+          resolution: 'low_resolution',
+          accessToken: 'YOUR_INSTAGRAM_ACCESS_TOKEN_GOES_HERE'
+      });
+      userFeed.run();
+      </script>
 </body>
 </html>

@@ -53,7 +53,7 @@ export default function createModal(){
       .modal {
         position: relative;
         margin: 2rem;
-        max-width: 900px;
+        max-width: 650px;
         width: 100%;
         display: grid;
         place-items: center;
@@ -63,15 +63,13 @@ export default function createModal(){
       
       .modal__image-container {
         display: flex;
-        max-height: 100vh;
+        max-height: 90vh;
         width: 100%;
       }
       
       .modal__image {
         width: 100%;
         height: 100%;
-        aspect-ratio: 16/10;
-        object-fit: cover;
       }
       
       .modal__overlay {
@@ -90,7 +88,7 @@ export default function createModal(){
       .modal__btn {
         display: grid;
         place-items: center;
-        background-color: hsl(var(--bkg) / .5);
+        background-color: white;
         color: hsl(var(--text));
         padding: .5rem;
         border: 4px solid transparent;

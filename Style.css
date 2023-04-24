@@ -330,6 +330,23 @@ nav ul li a:hover::after {
   padding: 50px 0;
 }
 
+.overlay {
+  position: absolute; 
+  background: rgba(57, 57, 57, 0.5);
+
+  /* center overlay text */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay_1 {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem;
+}
+
 .work-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -664,14 +681,10 @@ form btn2 {
 }
 
 #header-thank{
-  
   width: 100%;
-  height: 100vh;
-  
 }
 
 .header-thank-pic {
-  
   object-fit: cover;
   position: fixed;
   left: 0;
@@ -857,5 +870,11 @@ nav .fa-solid {
 
   .line-breaker img {
     width: 65%;
+  }
+
+  .header-thank-pic {
+    height: 100%;
+    width: 200%;
+
   }
 }

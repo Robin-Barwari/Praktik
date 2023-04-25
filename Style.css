@@ -386,6 +386,15 @@ nav ul li a:hover::after {
   transition: height 0.2s;
 }
 
+#text-modeling {
+  z-index: 100;
+  position: absolute;
+  color: black;
+  font-size: 30px;
+  left: 675px;
+  top: 500px;
+}
+
 .layer h3 {
   font-weight: 300;
   margin-bottom: 20px;

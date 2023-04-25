@@ -13,6 +13,14 @@
           {
             "src": "./Images/IMG_9027.JPG",
             "alt": "3"
+          },
+          {
+            "src": "./Images/IMG_8266.JPG",
+            "alt": "2"
+          },
+          {
+            "src": "./Images/IMG_9027.JPG",
+            "alt": "3"
           }
       ]
     },
@@ -20,15 +28,23 @@
       "name" : "Acting",
       "images" : [
           {
-            "src": "./Images/IMG_6997.jpg",
+            "src": "./Images/WhatsApp 1.jpeg",
             "alt": "a"
           },
           {
-            "src": "./Images/netflix.JPG",
+            "src": "./Images/WhatsApp 2.jpeg",
             "alt": "a"
           },
           {
-            "src": "./Images/B:W.jpg",
+            "src": "./Images/WhatsApp 3.jpeg",
+            "alt": "a"
+          },
+          {
+            "src": "./Images/WhatsApp 4.jpeg",
+            "alt": "a"
+          },
+          {
+            "src": "./Images/WhatsApp 5.jpeg",
             "alt": "a"
           }
       ]

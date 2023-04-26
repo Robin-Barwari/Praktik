@@ -63,7 +63,7 @@ export default function createModal(){
       
       .modal__image-container {
         display: flex;
-        max-height: 90vh;
+        max-height: 120vh;
         width: 100%;
       }
       
@@ -83,6 +83,7 @@ export default function createModal(){
       .modal__btn-container {
         display: flex;
         gap: 1rem;
+        justify-content: center;
       }
         
       .modal__btn {

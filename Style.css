@@ -474,9 +474,8 @@ nav ul li a:hover::after {
   color: #f1f1f1;
   width: 50%;
   left: 25%;
-  bottom: 5%;
-  transition: .5s ease;
-  opacity:0;
+  bottom: 45%;
+  
   color: white;
   font-size: 30px;
   padding: 10px;
@@ -526,17 +525,24 @@ a img{
   display: flex;
 }
 
+.contactinfotitle {
+  text-align: center;
+  font-size: 35px;
+  padding-top: 20px;
+  color: #030303;
+  font-family: Sue Ellen Francisco;
+}
+
 .contactinfotext {
   padding: 20px;
-  font-size: 21px;
+  font-size: 18px;
   color: #030303;
   text-align: center;
 }
 
 .contactinfobox {
-  margin: 5% 7.5% 10% 7.5%;
-  
-  background-color: pink;
+  margin: 5% 7.5% 15% 7.5%;
+  background-color: rgba(255, 192, 203, 0.449);
   opacity: 80%;
   border-radius: 2%;
   font-weight: 300;
@@ -730,7 +736,6 @@ nav .fa-solid {
     margin: 0;
     margin-bottom: 5%;
     margin-left: 0;
-    background-color: pink;
     opacity: 80%;
     border-radius: 2%;
     border-color: grey;

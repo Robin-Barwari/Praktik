@@ -13,6 +13,9 @@ body {
   color: #737373;
 }
 
+
+/* ---------- Header--------- */
+
 #header-home {
   width: 100%;
   height: 100vh;
@@ -47,6 +50,19 @@ body {
   bottom: 0;
   z-index: -1;
   filter: brightness(80%);
+}
+
+.portfolio-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  filter: brightness(65%);
 }
 
 .container {
@@ -518,7 +534,7 @@ a img{
 }
 
 .footer-content img {
-  width: 25%;
+  width: 30%;
 }
 
 .contact{
@@ -530,7 +546,8 @@ a img{
   font-size: 35px;
   padding-top: 20px;
   color: #030303;
-  font-family: Sue Ellen Francisco;
+  font-family: 'Poppins', sans-sherif;
+  font-weight: 200;
 }
 
 .contactinfotext {
@@ -628,7 +645,7 @@ form btn2 {
   padding: 25px;
   background: #d9d9d9;
   font-weight: 200;
-  font-size: 10px;
+  font-size: 14px;
 }
 
 .copyright i {
@@ -639,7 +656,7 @@ form btn2 {
   font-weight: 300;
   font-size: 40px;
   padding-bottom: 20px;
-  font-family: Sue Ellen Francisco;
+  font-family: 'Poppins', sans-sherif;
 }
 
 .footer-title-booking {
@@ -752,6 +769,7 @@ nav .fa-solid {
   .formtext {
     min-width: 100%;
     margin-left: 0;
+    
   }
 
   .logo {
@@ -772,15 +790,17 @@ nav .fa-solid {
   }
 
   nav ul {
-    background: #d9d9d9;
+    background: hsl(0 0% 0% / 0.6);
+    backdrop-filter: blur(1rem);
     position: fixed;
     top: 0;
-    right: -200px;
-    width: 200px;
+    right: -300px;
+    width: 300px;
     height: 100vh;
     padding-top: 50px;
     z-index: 2;
     transition: right 0.3s;
+    
   }
 
   nav ul li {
@@ -813,7 +833,7 @@ nav .fa-solid {
   }
 
   .about-title {
-    font-size: 40px;
+    font-size: 27px;
   }
 
   .about-col-1,
@@ -843,9 +863,6 @@ nav .fa-solid {
     display: block;
   }
 
-  .copyright {
-    font-size: 14px;
-  }
 
   .review-container .box .review-col {
     width: 100%;

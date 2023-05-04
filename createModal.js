@@ -53,7 +53,7 @@ export default function createModal(){
       .modal {
         position: relative;
         margin: 2rem;
-        max-width: 650px;
+        max-width: 550px;
         width: 100%;
         display: grid;
         place-items: center;
@@ -63,7 +63,7 @@ export default function createModal(){
       
       .modal__image-container {
         display: flex;
-        max-height: 120vh;
+        max-height: 95vh;
         width: 100%;
       }
       

@@ -4,47 +4,58 @@
       "images" : [
         {
             "src": "./Images/IMG_5566.JPG",
-            "alt": "1"
+            "alt": "1",
+            "date": "2020-10-22"
           },
           {
             "src": "./Images/IMG_8266.JPG",
-            "alt": "2"
+            "alt": "2",
+            "date": ""
           },
           {
             "src": "./Images/IMG_9027.JPG",
-            "alt": "3"
+            "alt": "3",
+            "date": ""
           },
           {
             "src": "./Images/WhatsApp Image 6.jpeg",
-            "alt": "4"
+            "alt": "4",
+            "date": ""
           },
           {
             "src": "./Images/WhatsApp Image 7.jpeg",
-            "alt": "5"
+            "alt": "5",
+            "date": ""
           },
           {
             "src": "./Images/WhatsApp Image 8.jpeg",
-            "alt": "6"
+            "alt": "6",
+            "date": ""
           },
           {
             "src": "./Images/WhatsApp Image 9.jpeg",
-            "alt": "7"
+            "alt": "7",
+            "date": ""
           },
           {
             "src": "./Images/WhatsApp Image 10.jpeg",
-            "alt": "8"
+            "alt": "8",
+            "date": ""
           },
           {
             "src": "./Images/WhatsApp Image 11.jpeg",
-            "alt": "9"
+            "alt": "9",
+            "date": ""
           },
           {
             "src": "./Images/WhatsApp Image 12.jpeg",
-            "alt": "10"
+            "alt": "10",
+            "date": ""
           },
           {
             "src": "./Images/WhatsApp Image 13.jpeg",
-            "alt": "11"
+            "alt": "11",
+            "date": ""
           }
       ]
     },
@@ -53,23 +64,28 @@
       "images" : [
           {
             "src": "./Images/WhatsApp 1.jpeg",
-            "alt": "a"
+            "alt": "a",
+            "date": ""
           },
           {
             "src": "./Images/WhatsApp 2.jpeg",
-            "alt": "a"
+            "alt": "a",
+            "date": ""
           },
           {
             "src": "./Images/WhatsApp 3.jpeg",
-            "alt": "a"
+            "alt": "a",
+            "date": ""
           },
           {
             "src": "./Images/WhatsApp 4.jpeg",
-            "alt": "a"
+            "alt": "a",
+            "date": ""
           },
           {
             "src": "./Images/WhatsApp 5.jpeg",
-            "alt": "a"
+            "alt": "a",
+            "date": ""
           }
       ]
     }

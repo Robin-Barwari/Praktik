@@ -1110,7 +1110,6 @@ nav .fa-solid {
   }
 
 }
-
 @media screen and (max-width: 920px) and (min-width: 601px) and (orientation: landscape) {
   .logo {
     width: 200px;
@@ -1171,6 +1170,73 @@ nav .fa-solid {
     font-size: 1.3vw;
     padding-bottom: 20px;
     padding-top: 10px;
+  }
+}
+
+@media screen and (max-width: 920px) and (min-width: 601px) and (orientation: portrait) {
+  .logo {
+    width: 200px;
+  }
+
+  .container {
+    padding: 5px 5%;
+  }
+
+  .header-text h1 {
+    font-size: 40px;
+  }
+
+  .header-text h2 {
+    font-size: 20px;
+  }
+
+  nav .fa-solid {
+    display: block;
+    font-size: 26px;
+  }
+
+  nav ul {
+    background: hsl(0 0% 0% / 0.6);
+    backdrop-filter: blur(1rem);
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100vh;
+    padding-top: 20px;
+    z-index: 2;
+    transition: right 0.3s;
+    
+  }
+
+  nav ul li {
+    display: block;
+    margin: 25px;
+  }
+
+  .booking-nav ul li a {
+    color: #ffffff;
+  }
+
+  nav ul .fa-solid {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+  }
+
+  .header-text {
+    margin-top:70%;
+    font-size: 30px;
+    flex-basis: 60%;
+    font-weight: 200;
+    color: #ffffff;
+  }
+
+  .info-text h4 {
+    font-size: 1.7vw;
+    padding-bottom: 20px;
+    padding-top: 30px;
   }
 }
 

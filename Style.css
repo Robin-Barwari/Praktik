@@ -183,8 +183,7 @@ nav ul li a:hover::after {
   align-items: center;
   text-align: center;
   background-color: #ffffff;
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px;
+  border-top: 5px;
   padding: 30px;
 }
 
@@ -201,22 +200,11 @@ nav ul li a:hover::after {
   width: 32.5%;
 }
 
-.photo-container .box .photo-col-port {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  
-}
 
 .photo-container .box .photo-col img {
   width: 100%;
   padding-top: 10px;
   border-radius: 15px;
-}
-
-.photo-container .box .photo-col-port img {
-  width: 80%;
-  padding-top: 10px;
 }
 
 
@@ -482,22 +470,6 @@ nav ul li a:hover::after {
   opacity: 1;
 }
 
-.text-port {
-  position: absolute;
-  bottom: 0;
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.5); /* Black see-through */
-  color: #f1f1f1;
-  width: 50%;
-  left: 25%;
-  bottom: 45%;
-  
-  color: white;
-  font-size: 30px;
-  padding: 10px;
-  text-align: center;
-  font-weight: 200;
-}
 
 .image-item img {
   object-fit: cover;
@@ -512,6 +484,208 @@ nav ul li a:hover::after {
   animation: flash 1.5s;
   filter: brightness(100%);
 }
+
+/* Slideshow container */
+.slideshow-bc {
+  background-color: #ffffff;
+  padding-top: 20px;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  cursor: pointer;
+}
+
+.container-iframes {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; 
+}
+
+.container-iframes-shorts {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 135%; 
+}
+
+.responsive-iframes{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Hide the images by default */
+.mySlides2 {
+  display: none;
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(0,0,0,0.5);
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgb(234, 190, 219, 0.93)
+}
+
+/* Caption text */
+.text {
+  color: #f1f1f1;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  text-align: center;
+  width: 50%;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 2.5%;
+  left: 25%;
+  text-align: center;
+}
+
+.text-port {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 50%;
+  left: 25%;
+  bottom: 88%;
+  color: white;
+  font-size: 20px;
+  padding: 5px;
+  text-align: center;
+  font-weight: 700;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  width: 28%;
+  left: 72%;
+}
+
+.numbertext span{
+  color: #EABEDB;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot2 {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #EABEDB;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+.slideshow-bc h3 {
+  font-size: 40px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.slide-col {
+  padding: 0 20px 0 20px;
+}
+
+.slide-container .box .slide-col {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+.slide-container .box .slide-col .slideshow-bc {
+  width: 100%;
+  padding-top: 10px;
+  border-radius: 15px;
+}
+
+.slide-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  
+}
+
+.slide-container .box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
 
 /* -------------INSTA FEED-------------- */
 a img{ 
@@ -803,6 +977,10 @@ nav .fa-solid {
     
   }
 
+  .booking-nav ul li a {
+    color: #ffffff;
+  }
+
   nav ul li {
     display: block;
     margin: 25px;
@@ -829,6 +1007,14 @@ nav .fa-solid {
   }
 
   .photo-container .box .photo-col-port {
+    width: 100%;
+  }
+
+  .slide-container .box {
+    flex-direction: column;
+  }
+
+  .slide-container .box .slide-col {
     width: 100%;
   }
 
@@ -913,5 +1099,84 @@ nav .fa-solid {
     height: 100%;
     width: 200%;
 
+  }
+
+  .text {
+    font-size: 10px;
+  }
+
+  .text-port {
+    font-size: 17px;
+  }
+
+}
+
+@media screen and (max-width: 920px) and (min-width: 601px) and (orientation: landscape) {
+  .logo {
+    width: 200px;
+  }
+
+  .header-text h1 {
+    font-size: 20px;
+  }
+
+  .header-text h2 {
+    font-size: 12px;
+  }
+
+  nav .fa-solid {
+    display: block;
+    font-size: 26px;
+  }
+
+  nav ul {
+    background: hsl(0 0% 0% / 0.6);
+    backdrop-filter: blur(1rem);
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100vh;
+    padding-top: 20px;
+    z-index: 2;
+    transition: right 0.3s;
+    
+  }
+
+  nav ul li {
+    display: block;
+    margin: 25px;
+  }
+
+  .booking-nav ul li a {
+    color: #ffffff;
+  }
+
+  nav ul .fa-solid {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+  }
+
+  .header-text {
+    margin-top:20%;
+    font-size: 30px;
+    flex-basis: 60%;
+    font-weight: 200;
+    color: #ffffff;
+  }
+
+  .info-text h4 {
+    font-size: 1.3vw;
+    padding-bottom: 20px;
+    padding-top: 10px;
+  }
+}
+
+
+@media only screen and (max-width: 600px) and (min-width: 300px) {
+  .header-text {
+    margin-top:40%;
   }
 }

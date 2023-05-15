@@ -26,14 +26,101 @@ body {
   height: 100vh;
 }
 
+#header-about::before {
+  animation: bounce 2.5s ease infinite;
+  bottom: 2rem;
+  color: #fff;
+  content: '╲╱';
+  font-size: 2rem;
+  height: 4rem;
+  left: 50%;
+  letter-spacing: -1px;
+  line-height: 4rem;
+  margin-left: -3rem;
+  opacity: 0.8;
+  position: absolute;
+  text-align: center;
+  width: 6rem;
+}
+
+@keyframes bounce {
+  50% {
+    transform: translateY(-50%);
+  }
+}
+
 #header-portfolio {
   width: 100%;
   height: 100vh;
 }
 
+#header-portfolio::before {
+  animation: bounce 1s ease infinite;
+  bottom: 2rem;
+  color: #fff;
+  content: '╲╱';
+  font-size: 2rem;
+  height: 4rem;
+  left: 50%;
+  letter-spacing: -1px;
+  line-height: 4rem;
+  margin-left: -3rem;
+  opacity: 0.8;
+  position: absolute;
+  text-align: center;
+  width: 6rem;
+}
+
+@keyframes bounce {
+  50% {
+    transform: translateY(-50%);
+  }
+}
+
+#header-inquiries {
+  width: 100%;
+  height: 100vh;
+}
+
+#header-inquiries::before {
+  animation: bounce 2.5s ease infinite;
+  bottom: 2rem;
+  color: #030303;
+  content: '╲╱';
+  font-size: 2rem;
+  height: 4rem;
+  left: 50%;
+  letter-spacing: -1px;
+  line-height: 4rem;
+  margin-left: -3rem;
+  opacity: 0.8;
+  position: absolute;
+  text-align: center;
+  width: 6rem;
+}
+
+@keyframes bounce {
+  50% {
+    transform: translateY(-50%);
+  }
+}
+
 #header-thanks {
   width: 100%;
   height: 100vh;
+}
+
+.inquiries-img {
+  width: 100%;
+  height: 210%;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0.8;
 }
 
 .header-thanks {
@@ -140,7 +227,7 @@ nav ul li a {
 }
 
 .booking-nav ul li a {
-  color: #737373;
+  color: #ffffff;
   text-decoration: none;
   font-size: 18px;
   position: relative;
@@ -807,6 +894,7 @@ a img{
 
 .contact{
   display: flex;
+  background-color: #ffffff;
 }
 
 .contactinfotitle {
@@ -1113,7 +1201,7 @@ nav .fa-solid {
   nav #fa-solid-inquiries {
     display: block;
     font-size: 25px;
-    color: #737373;
+    color: #ffffff;
   }
 
   nav ul {
@@ -1251,6 +1339,14 @@ nav .fa-solid {
     bottom: 0;
   }
 
+  .inquiries-img {
+    height: 100%;
+  }
+
+  #header-inquiries::before {
+    color: #fff;
+  }
+
   .footer-title {
     font-size: 30px;
   }
@@ -1328,7 +1424,7 @@ nav .fa-solid {
   nav #fa-solid-inquiries {
     display: block;
     font-size: 25px;
-    color: #737373;
+    color: #ffffff;
   }
 
   nav ul {
